@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS Import -->
+        <link rel="stylesheet" href="style.css" />
+        <!-- End of CSS Import -->
+        <!-- JS Import -->
+        <script src="script.js"></script>
+        <!-- End of JS Import -->
+        <title>Agency</title>
+        <h1>Agency Exercise</h1>
+    </head>
+    <body>
+        <form>
+            <label for="azienda">Azienda:</label>
+            <input type="text" id="azienda" name="azienda" required pattern="[a-zA-Z]+">
+          
+            <label for="prodotto">Prodotto:</label>
+            <input type="text" id="prodotto" name="prodotto" required pattern="[a-zA-Z]+">
+          
+            <label for="giorno-acquisto">Giorno acquisto:</label>
+            <input type="text" id="giorno-acquisto" name="giorno-acquisto" required pattern="[0-9]{1,2}" max="31">
+          
+            <label for="mese-acquisto">Mese acquisto:</label>
+            <select id="mese-acquisto" name="mese-acquisto" required>
+              <option value="GEN">GEN</option>
+              <option value="FEB">FEB</option>
+              <option value="MAR">MAR</option>
+              <option value="APR">APR</option>
+              <option value="MAG">MAG</option>
+              <option value="GIU">GIU</option>
+              <option value="LUG">LUG</option>
+              <option value="AGO">AGO</option>
+              <option value="SET">SET</option>
+              <option value="OTT">OTT</option>
+              <option value="NOV">NOV</option>
+              <option value="DIC">DIC</option>
+            </select>
+          
+            <label for="anno-acquisto">Anno acquisto:</label>
+            <input type="text" id="anno-acquisto" name="anno-acquisto" required pattern="[0-9]{4}" min="2000" max="2017">
+          
+            <label for="nr-prodotti-acquistati">Nr. prodotti acquistati:</label>
+            <input type="text" id="nr-prodotti-acquistati" name="nr-prodotti-acquistati" required pattern="[0-9]{1,2}" min="1" max="99">
+          
+            <label for="prezzo">Prezzo:</label>
+            <input type="text" id="prezzo" name="prezzo" required pattern="[0-9]{1,3}" min="1" max="999">
+          
+            <label>Tempi consegna:</label>
+            <input type="radio" id="tempi-consegna-30" name="tempi-consegna" value="30">
+            <label for="tempi-consegna-30">30 gg</label>
+            <input type="radio" id="tempi-consegna-60" name="tempi-consegna" value="60">
+            <label for="tempi-consegna-60">60 gg</label>
+            <input type="radio" id="tempi-consegna-90" name="tempi-consegna" value="90">
+            <label for="tempi-consegna-90">90 gg</label>
+          
+            <button type="button" id="codice-acquisto-btn">Codice Acquisto</button>
+            <button type="reset">Cancella</button>
+          
+            <label for="codice-acquisto">Codice acquisto:</label>
+            <input type="text" id="codice-acquisto" name="codice-acquisto" readonly>
+          </form>
+          
+    </body>
+</html>
